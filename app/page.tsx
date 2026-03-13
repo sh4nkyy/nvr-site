@@ -37,14 +37,14 @@ export default function Home() {
             key={i}
             className="bg-word"
             style={{
-              left: `${w.x}%`,
-              top: `${w.y}%`,
-              fontSize: `${w.size}vw`,
-              opacity: w.opacity,
-              animationDuration: `${w.duration}s`,
-              animationDelay: `${w.delay}s`,
-              transform: `rotate(${w.rotate}deg)`,
-            }}
+              '--x': `${w.x}%`,
+              '--y': `${w.y}%`,
+              '--size': `${w.size}vw`,
+              '--opacity': w.opacity,
+              '--duration': `${w.duration}s`,
+              '--delay': `${w.delay}s`,
+              '--rotate': `${w.rotate}deg`,
+            } as React.CSSProperties}
           >
             {w.text}
           </span>

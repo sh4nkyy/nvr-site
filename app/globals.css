@@ -116,12 +116,17 @@ body:has(.artist-card:hover) .cursor-ring {
 
 .bg-word {
   position: absolute;
+  left: var(--x);
+  top: var(--y);
   font-family: var(--serif);
+  font-size: var(--size);
   font-weight: 300;
   font-style: italic;
   color: var(--text);
+  opacity: var(--opacity);
   white-space: nowrap;
-  animation: bg-float linear infinite;
+  animation: bg-float var(--duration) var(--delay) linear infinite;
+  transform: rotate(var(--rotate));
   will-change: transform;
 }
 
