@@ -31,7 +31,7 @@ export default function ArtistPage() {
       {/* ── NAV ─────────────────────────────────────────────── */}
       <nav className="artist-page-nav">
         <Link href="/" className="nav-logo artist-nav-logo">
-          <NVRLogo size={22} color="currentColor" />
+          <NVRLogo size={50} color="currentColor" />
           NothingVeryReal
         </Link>
         <ul className="artist-switcher">

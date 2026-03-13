@@ -6,18 +6,18 @@ import { artists } from '@/lib/artists'
 import { useState } from 'react'
 
 const BG_WORDS = [
-  { text: 'nothing very real', x: 8,   y: 12, size: 3.8, opacity: 0.035, duration: 52, delay: 0,   rotate: -6  },
-  { text: 'nothing',           x: 62,  y: 7,  size: 6.5, opacity: 0.028, duration: 68, delay: -18, rotate: 3   },
-  { text: 'very real',         x: 30,  y: 55, size: 5.2, opacity: 0.03,  duration: 44, delay: -8,  rotate: -2  },
-  { text: 'nothing very real', x: 50,  y: 80, size: 2.8, opacity: 0.04,  duration: 60, delay: -32, rotate: 8   },
-  { text: 'real',              x: 80,  y: 35, size: 8,   opacity: 0.022, duration: 75, delay: -45, rotate: -12 },
-  { text: 'nothing',           x: 15,  y: 70, size: 4.2, opacity: 0.03,  duration: 50, delay: -22, rotate: 5   },
-  { text: 'very',              x: 72,  y: 60, size: 5.8, opacity: 0.025, duration: 58, delay: -14, rotate: -4  },
-  { text: 'nothing very real', x: -5,  y: 40, size: 2.2, opacity: 0.045, duration: 38, delay: -7,  rotate: 90  },
-  { text: 'NVR',               x: 45,  y: 25, size: 10,  opacity: 0.018, duration: 80, delay: -55, rotate: 0   },
-  { text: 'nothing very real', x: 88,  y: 88, size: 1.8, opacity: 0.05,  duration: 42, delay: -28, rotate: 15  },
-  { text: 'very',              x: 5,   y: 90, size: 3.2, opacity: 0.032, duration: 66, delay: -40, rotate: -8  },
-  { text: 'real',              x: 55,  y: 45, size: 4.5, opacity: 0.027, duration: 55, delay: -19, rotate: 6   },
+  { text: 'nothing very real', x: 8,   y: 12, size: 3.8, opacity: 0.035, duration: 34, delay: 0,   rotate: -6  },
+  { text: 'nothing',           x: 62,  y: 7,  size: 6.5, opacity: 0.028, duration: 44, delay: -18, rotate: 3   },
+  { text: 'very real',         x: 30,  y: 55, size: 5.2, opacity: 0.03,  duration: 28, delay: -8,  rotate: -2  },
+  { text: 'nothing very real', x: 50,  y: 80, size: 2.8, opacity: 0.04,  duration: 39, delay: -32, rotate: 8   },
+  { text: 'real',              x: 80,  y: 35, size: 8,   opacity: 0.022, duration: 48, delay: -45, rotate: -12 },
+  { text: 'nothing',           x: 15,  y: 70, size: 4.2, opacity: 0.03,  duration: 32, delay: -22, rotate: 5   },
+  { text: 'very',              x: 72,  y: 60, size: 5.8, opacity: 0.025, duration: 37, delay: -14, rotate: -4  },
+  { text: 'nothing very real', x: -5,  y: 40, size: 2.2, opacity: 0.045, duration: 24, delay: -7,  rotate: 90  },
+  { text: 'NVR',               x: 45,  y: 25, size: 10,  opacity: 0.018, duration: 52, delay: -55, rotate: 0   },
+  { text: 'nothing very real', x: 88,  y: 88, size: 1.8, opacity: 0.05,  duration: 27, delay: -28, rotate: 15  },
+  { text: 'very',              x: 5,   y: 90, size: 3.2, opacity: 0.032, duration: 42, delay: -40, rotate: -8  },
+  { text: 'real',              x: 55,  y: 45, size: 4.5, opacity: 0.027, duration: 35, delay: -19, rotate: 6   },
 ]
 
 type Panel = 'artists' | 'about' | 'contact' | null
@@ -53,7 +53,7 @@ export default function Home() {
 
       {/* ── TOP-LEFT LOGO ───────────────────────────────────── */}
       <Link href="/" className="home-logo" aria-label="NothingVeryReal home">
-        <NVRLogo size={36} color="currentColor" />
+        <NVRLogo size={50} color="currentColor" />
       </Link>
 
       {/* ── NAV ─────────────────────────────────────────────── */}
