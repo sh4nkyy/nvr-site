@@ -478,6 +478,136 @@ footer {
 .reveal.visible { opacity: 1; transform: none; }
 
 /* ── ARTIST PAGE ────────────────────────────────────────────── */
+
+/* Per-artist accent via data attribute */
+[data-artist="sham"]   { --artist-accent: #A89EE0; --artist-accent-6: #A89EE010; --artist-accent-9: #A89EE018; --artist-accent-13: #A89EE022; --artist-accent-20: #A89EE033; }
+[data-artist="koro"]   { --artist-accent: #F0A050; --artist-accent-6: #F0A05010; --artist-accent-9: #F0A05018; --artist-accent-13: #F0A05022; --artist-accent-20: #F0A05033; }
+[data-artist="mareso"] { --artist-accent: #D4A0B8; --artist-accent-6: #D4A0B810; --artist-accent-9: #D4A0B818; --artist-accent-13: #D4A0B822; --artist-accent-20: #D4A0B833; }
+[data-artist="allora"] { --artist-accent: #7B5EA7; --artist-accent-6: #7B5EA710; --artist-accent-9: #7B5EA718; --artist-accent-13: #7B5EA722; --artist-accent-20: #7B5EA733; }
+[data-artist="demo"]   { --artist-accent: #D8F040; --artist-accent-6: #D8F04010; --artist-accent-9: #D8F04018; --artist-accent-13: #D8F04022; --artist-accent-20: #D8F04033; }
+
+.artist-nav-logo { opacity: 0.7; }
+
+.artist-switcher a.active { color: var(--artist-accent); }
+
+.artist-hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 48px 64px;
+  overflow: hidden;
+}
+
+.artist-hero-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 80% at 50% 20%, var(--artist-accent-9) 0%, var(--bg) 75%);
+  pointer-events: none;
+}
+
+.artist-hero-ghost {
+  position: absolute;
+  font-family: var(--serif);
+  font-size: clamp(100px, 16vw, 200px);
+  font-weight: 300;
+  font-style: italic;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--artist-accent-6);
+  white-space: nowrap;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  line-height: 1;
+}
+
+.artist-hero-vignette {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(9,9,11,0.9) 100%);
+  pointer-events: none;
+}
+
+.artist-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.artist-hero-descriptor {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--artist-accent);
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeUp 1s 0.3s forwards;
+}
+
+.artist-hero-title {
+  font-family: var(--serif);
+  font-size: clamp(56px, 10vw, 120px);
+  font-weight: 300;
+  line-height: 1;
+  color: var(--text);
+  opacity: 0;
+  animation: fadeUp 1s 0.5s forwards;
+}
+
+.artist-content-section { background: var(--bg2); }
+
+.artist-bio {
+  font-family: var(--serif);
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.artist-tags--spaced { margin-bottom: 48px; }
+
+.artist-page-tag {
+  border-color: var(--artist-accent-20);
+  color: var(--muted);
+}
+
+.reveal--delay-1 { transition-delay: 0.1s; }
+
+.artist-music-label {
+  color: var(--artist-accent);
+  margin-bottom: 24px;
+}
+
+.artist-music-embed {
+  height: 100px;
+  background: var(--bg);
+  border: 1px solid var(--artist-accent-13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artist-embed-placeholder {
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+}
+
+.artist-links {
+  margin-top: 48px;
+  align-items: flex-start;
+}
+
+.artist-page .contact-link::after { background: var(--artist-accent); }
+
+.artist-back-link {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+}
+
 .artist-page-nav {
   position: fixed;
   top: 0; left: 0; right: 0;
