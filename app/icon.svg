@@ -1,0 +1,14 @@
+<svg viewBox="0 0 3000 3000" xmlns="http://www.w3.org/2000/svg">
+  <rect width="3000" height="3000" fill="#09090b"/>
+  <path
+    fill-rule="evenodd"
+    stroke-miterlimit="99999"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+    stroke="#b8a98a"
+    fill="none"
+    stroke-opacity="1"
+    stroke-width="242.914979757085"
+    d="M 1153.8461538461538,1730.7692307692307 L 1153.8461538461538 1384.6153846153845 L 1500.0 1730.7692307692307 L 1500.0 1384.6153846153845 L 1846.1538461538462 1730.7692307692307 L 1846.1538461538462 1384.6153846153845 L 1500.0 1384.6153846153845"
+  />
+</svg>
